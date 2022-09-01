@@ -1,0 +1,152 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+:root {
+	--champName: 1.2rem;
+	--gray: rgb(70, 68, 68);
+}
+
+/* global codes */
+body {
+	width: 100%;
+	height: 100vh;
+	background-color: white;
+	font-family: Arial, Helvetica, sans-serif, sans-serif;
+}
+
+ul {
+	list-style-type: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+img {
+	width: 100%;
+}
+
+/* nav */
+.navContainer {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	background-color: rgb(255, 255, 255);
+	text-transform: uppercase;
+	font-size: 0.8rem;
+	font-weight: 500;
+	height: 40px;
+}
+
+.navContainer img {
+	width: 80px;
+}
+
+.navContainer a {
+	color: rgb(0, 0, 0);
+	font-weight: 600;
+}
+
+/* heading */
+.heading {
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	padding: 30px;
+	color: var(--gray);
+}
+
+.heading h4 {
+	font-size: 1em;
+	font-weight: 400;
+	text-transform: uppercase;
+	text-decoration: solid;
+}
+
+.heading h1 {
+	font-size: 3em;
+	font-weight: 800;
+	text-transform: uppercase;
+}
+
+.heading p {
+	font-size: 0.8em;
+	font-weight: 100;
+}
+
+/* role selections  */
+
+.navChampClass {
+	border: 1px solid black;
+	margin: auto;
+	width: 80%;
+	padding: 15px
+}
+
+/* search bar */
+
+.search {
+	
+}
+
+.champClass {
+	display: flex;
+	justify-content: space-between;
+}
+
+.champClass a {
+	color: black;
+	font-size: small;
+}
+
+.champClass a:hover {
+	font-weight: 600;
+}
+
+/* ALL Champion display */
+
+.champCardWrapper {
+	width: 90%;
+	margin: auto;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.champCard {
+	position: relative;
+	/* border: 5px solid rgb(247, 0, 0); */
+	align-items: center;
+	width: 150px;
+	height: 200px;
+	overflow: hidden;
+}
+
+
+.champCardImg {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.champCardImg:hover {
+	transform: scale(1.1);
+}
+
+.champCardName {
+	bottom: 0;
+	color: white;
+	background-color: black;
+	padding: 10px;
+	position: absolute;
+	width: 100%;
+}
+
+/* .champCardName:hover {
+	transform: translateX(10px);
+} */
